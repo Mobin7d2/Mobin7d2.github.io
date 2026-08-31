@@ -1,7 +1,7 @@
-```css
-/* ------------------------------
-   General
------------------------------- */
+
+/* ==============================
+   RESET
+============================== */
 
 * {
     margin: 0;
@@ -14,30 +14,42 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                 Roboto, Helvetica, Arial, sans-serif;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    color: #202020;
+    background: #ffffff;
 
     line-height: 1.7;
-    color: #222;
-    background: #ffffff;
 }
 
 
-/* ------------------------------
-   Navigation
------------------------------- */
+/* ==============================
+   NAVIGATION
+============================== */
 
 header {
-    border-bottom: 1px solid #eaeaea;
     position: sticky;
     top: 0;
-    background: rgba(255, 255, 255, 0.95);
+
+    background: rgba(255, 255, 255, 0.94);
+
     backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid #eeeeee;
+
     z-index: 100;
 }
 
 .navbar {
     max-width: 1100px;
+
     margin: auto;
 
     padding: 20px 30px;
@@ -48,89 +60,151 @@ header {
 }
 
 .logo {
-    font-size: 1.2rem;
+    color: #111111;
+
+    font-size: 1.15rem;
+
     font-weight: 600;
+
     text-decoration: none;
-    color: #111;
 }
 
 .nav-links {
     display: flex;
+
     gap: 28px;
 }
 
 .nav-links a {
+    color: #666666;
+
     text-decoration: none;
-    color: #555;
-    font-size: 0.95rem;
+
+    font-size: 0.92rem;
 }
 
 .nav-links a:hover {
-    color: #000;
+    color: #111111;
 }
 
 
-/* ------------------------------
-   Hero
------------------------------- */
+/* ==============================
+   HERO
+============================== */
 
 .hero {
     max-width: 1100px;
+
+    min-height: 80vh;
+
     margin: auto;
 
-    min-height: 75vh;
+    padding: 90px 30px;
 
-    display: flex;
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 80px;
+
     align-items: center;
-
-    padding: 80px 30px;
 }
 
 .hero-text {
-    max-width: 750px;
+    max-width: 700px;
 }
 
-.eyebrow {
-    font-size: 0.8rem;
+.eyebrow,
+.section-label {
+    font-size: 0.75rem;
+
     letter-spacing: 2px;
-    color: #777;
+
+    font-weight: 600;
+
+    color: #777777;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(3.5rem, 7vw, 6rem);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
 
     margin-bottom: 20px;
 }
 
-.hero h1 {
-    font-size: clamp(3rem, 7vw, 5.5rem);
-    line-height: 1.05;
-
-    margin-bottom: 15px;
-}
-
 .hero h2 {
     font-size: 1.5rem;
+
     font-weight: 400;
 
-    color: #666;
+    color: #555555;
+
+    margin-bottom: 5px;
+}
+
+.affiliation {
+    color: #777777;
 
     margin-bottom: 25px;
 }
 
 .intro {
-    font-size: 1.2rem;
-    max-width: 650px;
+    font-size: 1.15rem;
 
-    color: #555;
+    color: #555555;
+
+    max-width: 650px;
 
     margin-bottom: 35px;
 }
 
 
-/* ------------------------------
-   Buttons
------------------------------- */
+/* ==============================
+   HERO PHOTO
+============================== */
+
+.hero-photo {
+    display: flex;
+
+    justify-content: center;
+}
+
+.photo-placeholder {
+    width: 300px;
+
+    height: 360px;
+
+    border-radius: 10px;
+
+    border: 1px solid #dddddd;
+
+    background: #f5f5f5;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #999999;
+
+    font-size: 0.9rem;
+}
+
+
+/* ==============================
+   BUTTONS
+============================== */
 
 .hero-buttons {
     display: flex;
-    gap: 15px;
+
+    gap: 12px;
 }
 
 .button {
@@ -138,14 +212,15 @@ header {
 
     padding: 11px 20px;
 
-    background: #111;
-    color: white;
+    background: #151515;
 
-    text-decoration: none;
+    color: #ffffff;
 
     border-radius: 6px;
 
-    font-size: 0.95rem;
+    text-decoration: none;
+
+    font-size: 0.9rem;
 }
 
 .button:hover {
@@ -155,15 +230,15 @@ header {
 .button.secondary {
     background: transparent;
 
-    color: #111;
+    color: #222222;
 
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
 }
 
 
-/* ------------------------------
-   Sections
------------------------------- */
+/* ==============================
+   SECTIONS
+============================== */
 
 .section {
     max-width: 900px;
@@ -172,42 +247,48 @@ header {
 
     padding: 100px 30px;
 
-    border-top: 1px solid #eee;
+    border-top: 1px solid #eeeeee;
 }
 
 .section h2 {
-    font-size: 2rem;
+    font-size: 2.3rem;
+
+    letter-spacing: -1px;
 
     margin-bottom: 35px;
 }
 
 .section p {
-    color: #555;
-
     max-width: 750px;
+
+    color: #555555;
 
     margin-bottom: 20px;
 }
 
 
-/* ------------------------------
-   Research
------------------------------- */
+/* ==============================
+   RESEARCH
+============================== */
 
-.research-item {
-    margin-bottom: 40px;
+.research-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
 }
 
 .research-item h3 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 
-/* ------------------------------
-   Projects
------------------------------- */
+/* ==============================
+   PROJECTS
+============================== */
 
 .projects-grid {
     display: grid;
@@ -218,11 +299,17 @@ header {
 }
 
 .project-card {
-    border: 1px solid #e5e5e5;
-
     padding: 25px;
 
+    border: 1px solid #e5e5e5;
+
     border-radius: 8px;
+
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
 }
 
 .project-card h3 {
@@ -230,55 +317,75 @@ header {
 }
 
 .project-card p {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
 }
 
 
-/* ------------------------------
-   Footer
------------------------------- */
+/* ==============================
+   FOOTER
+============================== */
 
 footer {
-    border-top: 1px solid #eee;
+    padding: 40px 20px;
+
+    border-top: 1px solid #eeeeee;
 
     text-align: center;
 
-    padding: 40px 20px;
+    color: #888888;
 
-    color: #777;
-
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 
-/* ------------------------------
-   Mobile
------------------------------- */
+/* ==============================
+   MOBILE
+============================== */
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
 
     .navbar {
         flex-direction: column;
+
         gap: 15px;
     }
 
     .nav-links {
-        gap: 15px;
+        gap: 16px;
+
         flex-wrap: wrap;
+
         justify-content: center;
     }
 
     .hero {
-        min-height: 65vh;
+        grid-template-columns: 1fr;
+
+        padding-top: 70px;
+
+        gap: 50px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-photo {
+        justify-content: flex-start;
+    }
+
+    .photo-placeholder {
+        width: 240px;
+
+        height: 290px;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
     }
 
     .projects-grid {
         grid-template-columns: 1fr;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: flex-start;
     }
 
 }

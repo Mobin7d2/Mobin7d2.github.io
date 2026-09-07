@@ -176,12 +176,12 @@ header {
 
 .profile-photo {
  
-    width: clamp(140px, 20vw, 360px);
-    height: clamp(140px, 20vw, 360px);
+    width: clamp(140px, 20vw, 500px);
+    height: clamp(140px, 20vw, 500px);
 
     object-fit: cover;
 
-    border-radius: 50%;
+    border-radius: 40%;
 
 }
 

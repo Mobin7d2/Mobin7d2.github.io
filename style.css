@@ -175,12 +175,12 @@ header {
 }
 
 .profile-photo {
-    width: 10vw;
-    height: 10vh;
+    width: 300px;
+    height: 250px;
 
     object-fit: cover;
 
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 

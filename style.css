@@ -176,8 +176,8 @@ header {
 
 .profile-photo {
  
-    width: clamp(140px, 12vw, 200px);
-    height: clamp(140px, 12vw, 200px);
+    width: clamp(140px, 20vw, 360px);
+    height: clamp(140px, 20vw, 360px);
 
     object-fit: cover;
 

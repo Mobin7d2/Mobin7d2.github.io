@@ -175,8 +175,8 @@ header {
 }
 
 .profile-photo {
-    width: 150px;
-    height: 160px;
+    width: 10vw;
+    height: 10vh;
 
     object-fit: cover;
 
@@ -376,4 +376,41 @@ footer {
     }
 
 }
-```
+
+
+/* ==============================
+   Social Links
+============================== */
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.social-links a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+
+    color: #555555;
+
+    text-decoration: none;
+
+    font-size: 1.1rem;
+
+    transition: all 0.25s ease;
+}
+
+.social-links a:hover {
+    color: #111111;
+    border-color: #111111;
+    transform: translateY(-3px);
+}
+

@@ -480,12 +480,22 @@ footer {
 
 .blog-article img {
     display: block;
-    width: 100%;
+    width: 80%;
     max-width: 450px;
     height: auto;
     margin: 25px auto;
     border-radius: 8px;
 }
+
+/* Captions */
+
+.blog-article figcaption {
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
 
 .read-more {
     display: inline-block;

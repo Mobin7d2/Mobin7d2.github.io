@@ -481,7 +481,7 @@ footer {
 .blog-article img {
     display: block;
     width: 100%;
-    max-width: 650px;
+    max-width: 450px;
     height: auto;
     margin: 25px auto;
     border-radius: 8px;
